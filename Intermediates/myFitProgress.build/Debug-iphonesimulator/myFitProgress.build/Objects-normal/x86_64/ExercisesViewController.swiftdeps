@@ -1,0 +1,416 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ExercisesViewController"
+provides-nominal:
+- "C13myFitProgress23ExercisesViewController"
+provides-member:
+- ["C13myFitProgress23ExercisesViewController", ""]
+provides-dynamic-lookup:
+- "didReceiveMemoryWarning"
+- "workout"
+- "viewDidLoad"
+depends-top-level:
+- "UIViewController"
+- "AnyObject"
+- !private "UITableViewCell"
+- !private "UIBarButtonItem"
+- "ExercisesViewController"
+- !private "StringLiteralType"
+- "String"
+- "Dictionary"
+- !private "exerciseTableView"
+- !private "BooleanLiteralType"
+depends-member:
+- !private ["PSs9AnyObject", "UIBarButtonItem"]
+- !private ["PSs9AnyObject", "UITableViewCell"]
+- ["PSs9AnyObject", "didReceiveMemoryWarning"]
+- !private ["PSs9AnyObject", "exerciseTableView"]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "navigationItem"]
+- !private ["PSs9AnyObject", "setRightBarButtonItem"]
+- !private ["PSs9AnyObject", "title"]
+- ["PSs9AnyObject", "viewDidLoad"]
+- ["PSs9AnyObject", "workout"]
+- ["PSs9AnyObject", ""]
+- !private ["Sa", "Generator"]
+- !private ["Sa", "Index"]
+- !private ["Sa", "SubSequence"]
+- !private ["Sa", "deinit"]
+- !private ["Sa", "subscript"]
+- !private ["PSs23ArrayLiteralConvertible", "Generator"]
+- !private ["PSs23ArrayLiteralConvertible", "Index"]
+- !private ["PSs23ArrayLiteralConvertible", "SubSequence"]
+- !private ["PSs23ArrayLiteralConvertible", "subscript"]
+- !private ["VSs10ArraySlice", "Generator"]
+- !private ["VSs10ArraySlice", "Index"]
+- !private ["PSs22BidirectionalIndexType", "Distance"]
+- !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["PSs21BitwiseOperationsType", "Distance"]
+- !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["PSs11CVarArgType", "Distance"]
+- !private ["PSs11CVarArgType", "IntegerLiteralType"]
+- !private ["PSs11CVarArgType", "UIBarButtonItem"]
+- !private ["PSs11CVarArgType", "UITableViewCell"]
+- ["PSs11CVarArgType", "didReceiveMemoryWarning"]
+- !private ["PSs11CVarArgType", "exerciseTableView"]
+- ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "navigationItem"]
+- !private ["PSs11CVarArgType", "setRightBarButtonItem"]
+- !private ["PSs11CVarArgType", "title"]
+- ["PSs11CVarArgType", "viewDidLoad"]
+- ["PSs11CVarArgType", "workout"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs14CollectionType", "Generator"]
+- !private ["PSs14CollectionType", "Index"]
+- !private ["PSs14CollectionType", "SubSequence"]
+- !private ["PSs14CollectionType", "_Element"]
+- !private ["PSs14CollectionType", "subscript"]
+- !private ["PSs10Comparable", "Distance"]
+- !private ["PSs10Comparable", "IntegerLiteralType"]
+- !private ["PSs28CustomDebugStringConvertible", "Generator"]
+- !private ["PSs28CustomDebugStringConvertible", "Index"]
+- !private ["PSs28CustomDebugStringConvertible", "SubSequence"]
+- !private ["PSs28CustomDebugStringConvertible", "subscript"]
+- !private ["PSs23CustomStringConvertible", "Distance"]
+- !private ["PSs23CustomStringConvertible", "Generator"]
+- !private ["PSs23CustomStringConvertible", "Index"]
+- !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["PSs23CustomStringConvertible", "SubSequence"]
+- !private ["PSs23CustomStringConvertible", "UIBarButtonItem"]
+- !private ["PSs23CustomStringConvertible", "UITableViewCell"]
+- ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["PSs23CustomStringConvertible", "exerciseTableView"]
+- ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "navigationItem"]
+- !private ["PSs23CustomStringConvertible", "setRightBarButtonItem"]
+- !private ["PSs23CustomStringConvertible", "subscript"]
+- !private ["PSs23CustomStringConvertible", "title"]
+- ["PSs23CustomStringConvertible", "viewDidLoad"]
+- ["PSs23CustomStringConvertible", "workout"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["PSs9Equatable", "Add"]
+- !private ["PSs9Equatable", "Distance"]
+- !private ["PSs9Equatable", "IntegerLiteralType"]
+- !private ["PSs9Equatable", "UIBarButtonItem"]
+- !private ["PSs9Equatable", "UITableViewCell"]
+- ["PSs9Equatable", "didReceiveMemoryWarning"]
+- !private ["PSs9Equatable", "exerciseTableView"]
+- ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "navigationItem"]
+- !private ["PSs9Equatable", "setRightBarButtonItem"]
+- !private ["PSs9Equatable", "title"]
+- ["PSs9Equatable", "viewDidLoad"]
+- ["PSs9Equatable", "workout"]
+- ["PSs9Equatable", ""]
+- ["C13myFitProgress23ExercisesViewController", "AnyObject"]
+- ["C13myFitProgress23ExercisesViewController", "Dictionary"]
+- ["C13myFitProgress23ExercisesViewController", "String"]
+- !private ["C13myFitProgress23ExercisesViewController", "UIBarButtonItem"]
+- !private ["C13myFitProgress23ExercisesViewController", "UITableViewCell"]
+- ["C13myFitProgress23ExercisesViewController", "deinit"]
+- ["C13myFitProgress23ExercisesViewController", "didReceiveMemoryWarning"]
+- !private ["C13myFitProgress23ExercisesViewController", "exerciseTableView"]
+- ["C13myFitProgress23ExercisesViewController", "init"]
+- !private ["C13myFitProgress23ExercisesViewController", "navigationItem"]
+- ["C13myFitProgress23ExercisesViewController", "viewDidLoad"]
+- ["C13myFitProgress23ExercisesViewController", "workout"]
+- !private ["PSs16ForwardIndexType", "Distance"]
+- !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
+- !private ["PSs13GeneratorType", "Element"]
+- !private ["PSs8Hashable", "Add"]
+- !private ["PSs8Hashable", "Distance"]
+- !private ["PSs8Hashable", "IntegerLiteralType"]
+- !private ["PSs8Hashable", "UIBarButtonItem"]
+- !private ["PSs8Hashable", "UITableViewCell"]
+- ["PSs8Hashable", "didReceiveMemoryWarning"]
+- !private ["PSs8Hashable", "exerciseTableView"]
+- ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "navigationItem"]
+- !private ["PSs8Hashable", "setRightBarButtonItem"]
+- !private ["PSs8Hashable", "title"]
+- ["PSs8Hashable", "viewDidLoad"]
+- ["PSs8Hashable", "workout"]
+- ["PSs8Hashable", ""]
+- !private ["PSs9Indexable", "Generator"]
+- !private ["PSs9Indexable", "Index"]
+- !private ["PSs9Indexable", "SubSequence"]
+- !private ["PSs9Indexable", "_Element"]
+- !private ["PSs9Indexable", "subscript"]
+- !private ["VSs17IndexingGenerator", "Element"]
+- !private ["Si", "Distance"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "deinit"]
+- !private ["PSs21IntegerArithmeticType", "Distance"]
+- !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs25IntegerLiteralConvertible", "Distance"]
+- !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs11IntegerType", "Distance"]
+- !private ["PSs11IntegerType", "IntegerLiteralType"]
+- !private ["PSs14MirrorPathType", "Distance"]
+- !private ["PSs14MirrorPathType", "IntegerLiteralType"]
+- !private ["PSs21MutableCollectionType", "Generator"]
+- !private ["PSs21MutableCollectionType", "Index"]
+- !private ["PSs21MutableCollectionType", "SubSequence"]
+- !private ["PSs21MutableCollectionType", "subscript"]
+- !private ["PSs16MutableIndexable", "Generator"]
+- !private ["PSs16MutableIndexable", "Index"]
+- !private ["PSs16MutableIndexable", "SubSequence"]
+- !private ["PSs16MutableIndexable", "subscript"]
+- !private ["PSs16MutableSliceable", "Generator"]
+- !private ["PSs16MutableSliceable", "Index"]
+- !private ["PSs16MutableSliceable", "SubSequence"]
+- !private ["PSs16MutableSliceable", "subscript"]
+- !private ["PSo8NSCoding", "UIBarButtonItem"]
+- !private ["PSo8NSCoding", "UITableViewCell"]
+- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["PSo8NSCoding", "exerciseTableView"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "navigationItem"]
+- !private ["PSo8NSCoding", "setRightBarButtonItem"]
+- !private ["PSo8NSCoding", "title"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", "workout"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo26NSExtensionRequestHandling", "UIBarButtonItem"]
+- !private ["PSo26NSExtensionRequestHandling", "UITableViewCell"]
+- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- !private ["PSo26NSExtensionRequestHandling", "exerciseTableView"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationItem"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", "workout"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- ["CSo8NSObject", "AnyObject"]
+- ["CSo8NSObject", "Dictionary"]
+- ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "UIBarButtonItem"]
+- !private ["CSo8NSObject", "UITableViewCell"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- !private ["CSo8NSObject", "exerciseTableView"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "navigationItem"]
+- !private ["CSo8NSObject", "setRightBarButtonItem"]
+- !private ["CSo8NSObject", "title"]
+- ["CSo8NSObject", "viewDidLoad"]
+- ["CSo8NSObject", "workout"]
+- !private ["PSo16NSObjectProtocol", "UIBarButtonItem"]
+- !private ["PSo16NSObjectProtocol", "UITableViewCell"]
+- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "exerciseTableView"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "navigationItem"]
+- !private ["PSo16NSObjectProtocol", "setRightBarButtonItem"]
+- !private ["PSo16NSObjectProtocol", "title"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", "workout"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSs21RandomAccessIndexType", "Distance"]
+- !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["VSs5Range", "deinit"]
+- !private ["PSs30RangeReplaceableCollectionType", "Generator"]
+- !private ["PSs30RangeReplaceableCollectionType", "Index"]
+- !private ["PSs30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["PSs30RangeReplaceableCollectionType", "subscript"]
+- !private ["PSs16RawRepresentable", "Add"]
+- !private ["V10ObjectiveC8Selector", "deinit"]
+- !private ["PSs12SequenceType", "Element"]
+- !private ["PSs12SequenceType", "Generator"]
+- !private ["PSs12SequenceType", "Index"]
+- !private ["PSs12SequenceType", "SubSequence"]
+- !private ["PSs12SequenceType", "_Element"]
+- !private ["PSs12SequenceType", "subscript"]
+- !private ["PSs17SignedIntegerType", "Distance"]
+- !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs16SignedNumberType", "Distance"]
+- !private ["PSs16SignedNumberType", "IntegerLiteralType"]
+- !private ["VSs5Slice", "Generator"]
+- !private ["VSs5Slice", "Index"]
+- !private ["VSs5Slice", "SubSequence"]
+- !private ["VSs5Slice", "_Element"]
+- !private ["PSs10Strideable", "Distance"]
+- !private ["PSs10Strideable", "IntegerLiteralType"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo12UIAppearance", "init"]
+- !private ["PSo21UIAppearanceContainer", "UIBarButtonItem"]
+- !private ["PSo21UIAppearanceContainer", "UITableViewCell"]
+- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- !private ["PSo21UIAppearanceContainer", "exerciseTableView"]
+- ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "navigationItem"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", "workout"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo15UIBarButtonItem", "init"]
+- !private ["OSC21UIBarButtonSystemItem", "Add"]
+- !private ["CSo9UIBarItem", "init"]
+- !private ["PSo18UIContentContainer", "UIBarButtonItem"]
+- !private ["PSo18UIContentContainer", "UITableViewCell"]
+- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- !private ["PSo18UIContentContainer", "exerciseTableView"]
+- ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "navigationItem"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", "workout"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo18UIFocusEnvironment", "UIBarButtonItem"]
+- !private ["PSo18UIFocusEnvironment", "UITableViewCell"]
+- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UIFocusEnvironment", "exerciseTableView"]
+- ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "navigationItem"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", "workout"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo16UINavigationItem", "setRightBarButtonItem"]
+- !private ["CSo16UINavigationItem", "title"]
+- ["CSo11UIResponder", "AnyObject"]
+- ["CSo11UIResponder", "Dictionary"]
+- ["CSo11UIResponder", "String"]
+- !private ["CSo11UIResponder", "UIBarButtonItem"]
+- !private ["CSo11UIResponder", "UITableViewCell"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- !private ["CSo11UIResponder", "exerciseTableView"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "navigationItem"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- ["CSo11UIResponder", "workout"]
+- !private ["PSo16UIStateRestoring", "UIBarButtonItem"]
+- !private ["PSo16UIStateRestoring", "UITableViewCell"]
+- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- !private ["PSo16UIStateRestoring", "exerciseTableView"]
+- ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "navigationItem"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", "workout"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "UIBarButtonItem"]
+- !private ["PSo18UITraitEnvironment", "UITableViewCell"]
+- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UITraitEnvironment", "exerciseTableView"]
+- ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "navigationItem"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", "workout"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo16UIViewController", "AnyObject"]
+- ["CSo16UIViewController", "Dictionary"]
+- ["CSo16UIViewController", "String"]
+- !private ["CSo16UIViewController", "UIBarButtonItem"]
+- !private ["CSo16UIViewController", "UITableViewCell"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- !private ["CSo16UIViewController", "exerciseTableView"]
+- ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "navigationItem"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", "workout"]
+- ["CSo16UIViewController", ""]
+- !private ["PSs10_ArrayType", "Generator"]
+- !private ["PSs10_ArrayType", "Index"]
+- !private ["PSs10_ArrayType", "SubSequence"]
+- !private ["PSs10_ArrayType", "subscript"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs24_DestructorSafeContainer", "Generator"]
+- !private ["PSs24_DestructorSafeContainer", "Index"]
+- !private ["PSs24_DestructorSafeContainer", "SubSequence"]
+- !private ["PSs24_DestructorSafeContainer", "subscript"]
+- !private ["PSs14_Incrementable", "Distance"]
+- !private ["PSs14_Incrementable", "IntegerLiteralType"]
+- !private ["PSs22_IntegerArithmeticType", "Distance"]
+- !private ["PSs22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs12_IntegerType", "Distance"]
+- !private ["PSs12_IntegerType", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "Distance"]
+- !private ["PSs21_ObjectiveCBridgeable", "Generator"]
+- !private ["PSs21_ObjectiveCBridgeable", "Index"]
+- !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["PSs21_ObjectiveCBridgeable", "subscript"]
+- !private ["PSs22_RandomAccessAmbiguity", "Distance"]
+- !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "Distance"]
+- !private ["PSs12_Reflectable", "Generator"]
+- !private ["PSs12_Reflectable", "Index"]
+- !private ["PSs12_Reflectable", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "SubSequence"]
+- !private ["PSs12_Reflectable", "subscript"]
+- !private ["PSs18_SignedIntegerType", "Distance"]
+- !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs11_Strideable", "Distance"]
+- !private ["PSs11_Strideable", "IntegerLiteralType"]
+depends-nominal:
+- "PSs9AnyObject"
+- !private "Sa"
+- !private "PSs23ArrayLiteralConvertible"
+- !private "VSs10ArraySlice"
+- !private "PSs22BidirectionalIndexType"
+- !private "PSs21BitwiseOperationsType"
+- "PSs11CVarArgType"
+- !private "PSs14CollectionType"
+- !private "PSs10Comparable"
+- !private "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "C13myFitProgress23ExercisesViewController"
+- !private "PSs16ForwardIndexType"
+- !private "PSs13GeneratorType"
+- "PSs8Hashable"
+- !private "PSs9Indexable"
+- !private "VSs17IndexingGenerator"
+- !private "Si"
+- !private "PSs21IntegerArithmeticType"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSs11IntegerType"
+- !private "PSs14MirrorPathType"
+- !private "PSs21MutableCollectionType"
+- !private "PSs16MutableIndexable"
+- !private "PSs16MutableSliceable"
+- "PSo8NSCoding"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSs21RandomAccessIndexType"
+- !private "VSs5Range"
+- !private "PSs30RangeReplaceableCollectionType"
+- !private "PSs16RawRepresentable"
+- !private "V10ObjectiveC8Selector"
+- !private "PSs12SequenceType"
+- !private "PSs17SignedIntegerType"
+- !private "PSs16SignedNumberType"
+- !private "VSs5Slice"
+- !private "PSs10Strideable"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- !private "CSo15UIBarButtonItem"
+- !private "OSC21UIBarButtonSystemItem"
+- !private "CSo9UIBarItem"
+- "PSo18UIContentContainer"
+- "PSo18UIFocusEnvironment"
+- !private "CSo16UINavigationItem"
+- "CSo11UIResponder"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- "CSo16UIViewController"
+- !private "PSs10_ArrayType"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- !private "PSs24_DestructorSafeContainer"
+- !private "PSs14_Incrementable"
+- !private "PSs22_IntegerArithmeticType"
+- !private "PSs12_IntegerType"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "PSs22_RandomAccessAmbiguity"
+- !private "PSs12_Reflectable"
+- !private "PSs18_SignedIntegerType"
+- !private "PSs11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+interface-hash: "41fb784219dcb9142fe0a66631035fe2"

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Vxb-WJ-UUb">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="myFitProgress" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Y5A-ne-d9X">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="UiX-wL-F3p"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ck1-Ex-erR"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Y5A-ne-d9X" secondAttribute="bottom" id="2P5-Cd-f14"/>
+                            <constraint firstItem="Y5A-ne-d9X" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="DFU-4h-btT"/>
+                            <constraint firstItem="Y5A-ne-d9X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="EZO-6I-6AU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Y5A-ne-d9X" secondAttribute="trailing" constant="-20" id="wbA-Au-Phg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="pWQ-a4-4Am">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="2U5-3v-WA7">
+                            <connections>
+                                <action selector="addWorkout:" destination="BYZ-38-t0r" id="o9g-R5-7eV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="workoutTableView" destination="Y5A-ne-d9X" id="gh9-xW-PZH"/>
+                        <segue destination="sk2-Bq-4FY" kind="show" identifier="exerciseSegue" id="xvn-7v-UKm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1055" y="311"/>
+        </scene>
+        <!--Exercises View Controller-->
+        <scene sceneID="lm6-Kf-87y">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="sk2-Bq-4FY" customClass="ExercisesViewController" customModule="myFitProgress" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sjO-Rp-vNf"/>
+                        <viewControllerLayoutGuide type="bottom" id="ofJ-Sp-SxK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="T8s-iW-5S4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mNv-oh-QsU">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="sk2-Bq-4FY" id="mTs-a3-tfH"/>
+                                    <outlet property="delegate" destination="sk2-Bq-4FY" id="ff4-WP-4cA"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mNv-oh-QsU" firstAttribute="top" secondItem="sjO-Rp-vNf" secondAttribute="bottom" id="0hM-HY-ZuL"/>
+                            <constraint firstItem="mNv-oh-QsU" firstAttribute="leading" secondItem="T8s-iW-5S4" secondAttribute="leadingMargin" constant="-20" id="1Fg-iR-vk9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mNv-oh-QsU" secondAttribute="trailing" constant="-20" id="2in-RS-bbg"/>
+                            <constraint firstItem="ofJ-Sp-SxK" firstAttribute="top" secondItem="mNv-oh-QsU" secondAttribute="bottom" id="7PQ-YP-sLM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="exerciseTableView" destination="mNv-oh-QsU" id="Url-41-BBW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ogB-Xz-7TE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1744" y="317"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="apz-4a-sYh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vxb-WJ-UUb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2nd-6V-LHe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Wb3-Bt-cvB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fyZ-tP-xQG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="194" y="-381"/>
+        </scene>
+    </scenes>
+</document>
