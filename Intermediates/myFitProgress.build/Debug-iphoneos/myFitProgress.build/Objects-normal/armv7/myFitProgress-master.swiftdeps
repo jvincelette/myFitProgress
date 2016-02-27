@@ -1,7 +1,8 @@
 version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
 options: "1aac59ece0f6dbd61640a8a609d18860"
-build_time: [509777396, 631013000]
+build_time: [509906036, 910020000]
 inputs:
   "/Users/justinvincelette/Software/myFitProgress/myFitProgress/AppDelegate.swift": [509763670, 0]
-  "/Users/justinvincelette/Software/myFitProgress/myFitProgress/ViewController.swift": [509777358, 0]
-  "/Users/justinvincelette/Software/myFitProgress/myFitProgress/ExercisesViewController.swift": [509777358, 0]
+  "/Users/justinvincelette/Software/myFitProgress/myFitProgress/SetsViewController.swift": [509906036, 0]
+  "/Users/justinvincelette/Software/myFitProgress/myFitProgress/ExercisesViewController.swift": [509905581, 0]
+  "/Users/justinvincelette/Software/myFitProgress/myFitProgress/ViewController.swift": [509905322, 0]

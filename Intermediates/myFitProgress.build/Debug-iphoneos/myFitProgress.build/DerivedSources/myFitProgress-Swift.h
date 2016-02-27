@@ -110,33 +110,52 @@ SWIFT_CLASS("_TtC13myFitProgress11AppDelegate")
 @class UITableView;
 @class NSIndexPath;
 @class UITableViewCell;
+@class UIStoryboardSegue;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC13myFitProgress23ExercisesViewController")
 @interface ExercisesViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
-@property (nonatomic, copy) NSString * __nonnull workoutName;
-@property (nonatomic, copy) NSDictionary<NSString *, id> * __nonnull workout;
-@property (nonatomic, copy) NSArray<NSDictionary<NSString *, id> *> * __nonnull exercises;
+@property (nonatomic, copy) NSString * __nonnull workout;
+@property (nonatomic, copy) NSArray<NSString *> * __nonnull exercises;
 @property (nonatomic, weak) IBOutlet UITableView * __null_unspecified exerciseTableView;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (void)tableView:(UITableView * __nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (void)prepareForSegue:(UIStoryboardSegue * __nonnull)segue sender:(id __nullable)sender;
 - (void)addExercise:(id __nonnull)sender;
 - (void)tableView:(UITableView * __nonnull)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (void)confirmDelete:(NSInteger)index;
 - (void)save;
-- (NSString * __nonnull)getExerciseName:(NSInteger)index;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIStoryboardSegue;
+
+SWIFT_CLASS("_TtC13myFitProgress18SetsViewController")
+@interface SetsViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
+@property (nonatomic, copy) NSString * __nonnull workoutExercise;
+@property (nonatomic, copy) NSArray<NSArray<NSNumber *> *> * __nonnull sets;
+@property (nonatomic, weak) IBOutlet UITableView * __null_unspecified setsTableView;
+- (void)viewDidLoad;
+- (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (void)addSet:(id __nonnull)sender;
+- (void)tableView:(UITableView * __nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (void)tableView:(UITableView * __nonnull)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (void)confirmDelete:(NSInteger)index;
+- (void)save;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC13myFitProgress14ViewController")
 @interface ViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
-@property (nonatomic, copy) NSArray<NSDictionary<NSString *, id> *> * __nonnull workouts;
+@property (nonatomic, copy) NSArray<NSString *> * __nonnull workouts;
 @property (nonatomic, weak) IBOutlet UITableView * __null_unspecified workoutTableView;
 - (void)viewDidLoad;
 - (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
@@ -147,8 +166,7 @@ SWIFT_CLASS("_TtC13myFitProgress14ViewController")
 - (void)tableView:(UITableView * __nonnull)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (void)confirmDelete:(NSInteger)index;
 - (void)save;
-- (NSInteger)getIndex:(NSArray<NSDictionary<NSString *, id> *> * __nonnull)a word:(NSString * __nonnull)word;
-- (NSString * __nonnull)getWorkoutName:(NSInteger)index;
+- (NSInteger)getIndex:(NSArray<NSString *> * __nonnull)a word:(NSString * __nonnull)word;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

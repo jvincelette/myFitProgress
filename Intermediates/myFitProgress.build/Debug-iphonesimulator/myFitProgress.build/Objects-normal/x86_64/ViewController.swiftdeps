@@ -6,39 +6,43 @@ provides-nominal:
 provides-member:
 - ["C13myFitProgress14ViewController", ""]
 provides-dynamic-lookup:
+- "getIndex"
+- "save"
 - "viewDidLoad"
+- "confirmDelete"
 - "workouts"
-- "prepareForSegue"
-- "workoutTableView"
 - "addWorkout"
 - "tableView"
 - "tableView"
 - "tableView"
-- "save"
+- "tableView"
+- "prepareForSegue"
 - "didReceiveMemoryWarning"
+- "workoutTableView"
 depends-top-level:
-- "UITableViewDelegate"
-- !private "UIAlertController"
-- !private "NSUserDefaults"
-- "UITableViewDataSource"
-- !private "ExercisesViewController"
-- "UITableView"
-- !private "Void"
 - "Int"
+- "UIStoryboardSegue"
+- "UITableView"
+- "ViewController"
+- "UIViewController"
 - !private "=="
+- "UITableViewDataSource"
+- "NSIndexPath"
+- "UITableViewDelegate"
+- "UITableViewCell"
+- !private "Void"
+- "AnyObject"
+- !private "UIAlertController"
+- !private "StringLiteralType"
+- !private "++"
+- "UITableViewCellEditingStyle"
 - !private "UITextField"
 - !private "UIAlertAction"
-- "UIViewController"
-- !private "StringLiteralType"
-- !private "getIndex"
-- "UITableViewCell"
-- "AnyObject"
-- "ViewController"
-- "Dictionary"
 - "String"
-- "NSIndexPath"
+- !private "ExercisesViewController"
+- !private "<"
+- !private "NSUserDefaults"
 - !private "BooleanLiteralType"
-- "UIStoryboardSegue"
 depends-member:
 - !private ["PSs9AnyObject", "NSUserDefaults"]
 - !private ["PSs9AnyObject", "UIAlertAction"]
@@ -48,10 +52,11 @@ depends-member:
 - !private ["PSs9AnyObject", "addTextFieldWithConfigurationHandler"]
 - ["PSs9AnyObject", "addWorkout"]
 - !private ["PSs9AnyObject", "cellForRowAtIndexPath"]
+- ["PSs9AnyObject", "confirmDelete"]
 - !private ["PSs9AnyObject", "dequeueReusableCellWithIdentifier"]
 - !private ["PSs9AnyObject", "destinationViewController"]
 - ["PSs9AnyObject", "didReceiveMemoryWarning"]
-- !private ["PSs9AnyObject", "getIndex"]
+- ["PSs9AnyObject", "getIndex"]
 - !private ["PSs9AnyObject", "identifier"]
 - ["PSs9AnyObject", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSs9AnyObject", "indexPathForSelectedRow"]
@@ -98,17 +103,23 @@ depends-member:
 - !private ["Sa", "SubSequence"]
 - !private ["Sa", "_Element"]
 - !private ["Sa", "append"]
+- !private ["Sa", "capacity"]
 - !private ["Sa", "count"]
 - !private ["Sa", "deinit"]
 - !private ["Sa", "first"]
+- !private ["Sa", "indexOf"]
+- !private ["Sa", "removeAtIndex"]
 - !private ["Sa", "subscript"]
 - !private ["PSs23ArrayLiteralConvertible", "Generator"]
 - !private ["PSs23ArrayLiteralConvertible", "Index"]
 - !private ["PSs23ArrayLiteralConvertible", "SubSequence"]
 - !private ["PSs23ArrayLiteralConvertible", "_Element"]
 - !private ["PSs23ArrayLiteralConvertible", "append"]
+- !private ["PSs23ArrayLiteralConvertible", "capacity"]
 - !private ["PSs23ArrayLiteralConvertible", "count"]
 - !private ["PSs23ArrayLiteralConvertible", "first"]
+- !private ["PSs23ArrayLiteralConvertible", "indexOf"]
+- !private ["PSs23ArrayLiteralConvertible", "removeAtIndex"]
 - !private ["PSs23ArrayLiteralConvertible", "subscript"]
 - !private ["VSs10ArraySlice", "Generator"]
 - !private ["VSs10ArraySlice", "Index"]
@@ -117,6 +128,7 @@ depends-member:
 - !private ["PSs21BitwiseOperationsType", "Distance"]
 - !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
 - !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
 - !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
 - !private ["PSs11CVarArgType", "Distance"]
@@ -129,10 +141,11 @@ depends-member:
 - !private ["PSs11CVarArgType", "addTextFieldWithConfigurationHandler"]
 - ["PSs11CVarArgType", "addWorkout"]
 - !private ["PSs11CVarArgType", "cellForRowAtIndexPath"]
+- ["PSs11CVarArgType", "confirmDelete"]
 - !private ["PSs11CVarArgType", "dequeueReusableCellWithIdentifier"]
 - !private ["PSs11CVarArgType", "destinationViewController"]
 - ["PSs11CVarArgType", "didReceiveMemoryWarning"]
-- !private ["PSs11CVarArgType", "getIndex"]
+- ["PSs11CVarArgType", "getIndex"]
 - !private ["PSs11CVarArgType", "identifier"]
 - ["PSs11CVarArgType", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSs11CVarArgType", "indexPathForSelectedRow"]
@@ -174,54 +187,60 @@ depends-member:
 - ["PSs11CVarArgType", "workoutTableView"]
 - ["PSs11CVarArgType", "workouts"]
 - ["PSs11CVarArgType", ""]
+- !private ["VSs9Character", "deinit"]
 - !private ["PSs14CollectionType", "Generator"]
 - !private ["PSs14CollectionType", "Index"]
-- !private ["PSs14CollectionType", "Key"]
 - !private ["PSs14CollectionType", "SubSequence"]
-- !private ["PSs14CollectionType", "Value"]
 - !private ["PSs14CollectionType", "_Element"]
 - !private ["PSs14CollectionType", "append"]
+- !private ["PSs14CollectionType", "capacity"]
 - !private ["PSs14CollectionType", "count"]
 - !private ["PSs14CollectionType", "first"]
+- !private ["PSs14CollectionType", "indexOf"]
+- !private ["PSs14CollectionType", "removeAtIndex"]
 - !private ["PSs14CollectionType", "subscript"]
 - !private ["PSs10Comparable", "Distance"]
 - !private ["PSs10Comparable", "IntegerLiteralType"]
+- !private ["PSs10Comparable", "init"]
 - !private ["PSs28CustomDebugStringConvertible", "Generator"]
 - !private ["PSs28CustomDebugStringConvertible", "Index"]
-- !private ["PSs28CustomDebugStringConvertible", "Key"]
 - ["PSs28CustomDebugStringConvertible", "Some"]
 - !private ["PSs28CustomDebugStringConvertible", "SubSequence"]
-- !private ["PSs28CustomDebugStringConvertible", "Value"]
 - !private ["PSs28CustomDebugStringConvertible", "_Element"]
 - !private ["PSs28CustomDebugStringConvertible", "append"]
+- !private ["PSs28CustomDebugStringConvertible", "capacity"]
 - !private ["PSs28CustomDebugStringConvertible", "count"]
 - !private ["PSs28CustomDebugStringConvertible", "first"]
+- !private ["PSs28CustomDebugStringConvertible", "indexOf"]
+- !private ["PSs28CustomDebugStringConvertible", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "removeAtIndex"]
 - !private ["PSs28CustomDebugStringConvertible", "subscript"]
 - !private ["PSs23CustomStringConvertible", "Distance"]
 - !private ["PSs23CustomStringConvertible", "Generator"]
 - !private ["PSs23CustomStringConvertible", "Index"]
 - !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
-- !private ["PSs23CustomStringConvertible", "Key"]
 - !private ["PSs23CustomStringConvertible", "NSUserDefaults"]
 - !private ["PSs23CustomStringConvertible", "SubSequence"]
 - !private ["PSs23CustomStringConvertible", "UIAlertAction"]
 - !private ["PSs23CustomStringConvertible", "UIAlertController"]
 - !private ["PSs23CustomStringConvertible", "UITableViewCell"]
-- !private ["PSs23CustomStringConvertible", "Value"]
 - !private ["PSs23CustomStringConvertible", "_Element"]
 - !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs23CustomStringConvertible", "addAction"]
 - !private ["PSs23CustomStringConvertible", "addTextFieldWithConfigurationHandler"]
 - ["PSs23CustomStringConvertible", "addWorkout"]
 - !private ["PSs23CustomStringConvertible", "append"]
+- !private ["PSs23CustomStringConvertible", "capacity"]
 - !private ["PSs23CustomStringConvertible", "cellForRowAtIndexPath"]
+- ["PSs23CustomStringConvertible", "confirmDelete"]
 - !private ["PSs23CustomStringConvertible", "count"]
 - !private ["PSs23CustomStringConvertible", "dequeueReusableCellWithIdentifier"]
 - !private ["PSs23CustomStringConvertible", "destinationViewController"]
 - ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
 - !private ["PSs23CustomStringConvertible", "first"]
-- !private ["PSs23CustomStringConvertible", "getIndex"]
+- ["PSs23CustomStringConvertible", "getIndex"]
 - !private ["PSs23CustomStringConvertible", "identifier"]
+- !private ["PSs23CustomStringConvertible", "indexOf"]
 - ["PSs23CustomStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSs23CustomStringConvertible", "indexPathForSelectedRow"]
 - ["PSs23CustomStringConvertible", "init"]
@@ -234,6 +253,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "presentViewController"]
 - !private ["PSs23CustomStringConvertible", "registerClass"]
 - !private ["PSs23CustomStringConvertible", "reloadData"]
+- !private ["PSs23CustomStringConvertible", "removeAtIndex"]
 - !private ["PSs23CustomStringConvertible", "row"]
 - ["PSs23CustomStringConvertible", "save"]
 - ["PSs23CustomStringConvertible", "scrollViewDidEndDecelerating"]
@@ -263,21 +283,17 @@ depends-member:
 - ["PSs23CustomStringConvertible", "workoutTableView"]
 - ["PSs23CustomStringConvertible", "workouts"]
 - ["PSs23CustomStringConvertible", ""]
-- !private ["VSs10Dictionary", "Index"]
-- !private ["VSs10Dictionary", "Key"]
-- !private ["VSs10Dictionary", "Value"]
-- !private ["VSs10Dictionary", "deinit"]
-- !private ["VSs10Dictionary", "subscript"]
-- !private ["PSs28DictionaryLiteralConvertible", "Index"]
-- !private ["PSs28DictionaryLiteralConvertible", "Key"]
-- !private ["PSs28DictionaryLiteralConvertible", "Value"]
-- !private ["PSs28DictionaryLiteralConvertible", "subscript"]
+- !private ["Sd", "deinit"]
+- !private ["PSs9Equatable", "ActionSheet"]
 - !private ["PSs9Equatable", "Alert"]
 - !private ["PSs9Equatable", "Cancel"]
 - !private ["PSs9Equatable", "Default"]
+- !private ["PSs9Equatable", "Delete"]
+- !private ["PSs9Equatable", "Destructive"]
 - !private ["PSs9Equatable", "Distance"]
 - !private ["PSs9Equatable", "IntegerLiteralType"]
 - !private ["PSs9Equatable", "NSUserDefaults"]
+- !private ["PSs9Equatable", "RawValue"]
 - !private ["PSs9Equatable", "UIAlertAction"]
 - !private ["PSs9Equatable", "UIAlertController"]
 - !private ["PSs9Equatable", "UITableViewCell"]
@@ -286,10 +302,11 @@ depends-member:
 - !private ["PSs9Equatable", "addTextFieldWithConfigurationHandler"]
 - ["PSs9Equatable", "addWorkout"]
 - !private ["PSs9Equatable", "cellForRowAtIndexPath"]
+- ["PSs9Equatable", "confirmDelete"]
 - !private ["PSs9Equatable", "dequeueReusableCellWithIdentifier"]
 - !private ["PSs9Equatable", "destinationViewController"]
 - ["PSs9Equatable", "didReceiveMemoryWarning"]
-- !private ["PSs9Equatable", "getIndex"]
+- ["PSs9Equatable", "getIndex"]
 - !private ["PSs9Equatable", "identifier"]
 - ["PSs9Equatable", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSs9Equatable", "indexPathForSelectedRow"]
@@ -332,15 +349,21 @@ depends-member:
 - ["PSs9Equatable", "workouts"]
 - ["PSs9Equatable", ""]
 - !private ["C13myFitProgress23ExercisesViewController", "workout"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Sf", "deinit"]
 - !private ["PSs16ForwardIndexType", "Distance"]
 - !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
 - !private ["PSs13GeneratorType", "Element"]
+- !private ["PSs8Hashable", "ActionSheet"]
 - !private ["PSs8Hashable", "Alert"]
 - !private ["PSs8Hashable", "Cancel"]
 - !private ["PSs8Hashable", "Default"]
+- !private ["PSs8Hashable", "Delete"]
+- !private ["PSs8Hashable", "Destructive"]
 - !private ["PSs8Hashable", "Distance"]
 - !private ["PSs8Hashable", "IntegerLiteralType"]
 - !private ["PSs8Hashable", "NSUserDefaults"]
+- !private ["PSs8Hashable", "RawValue"]
 - !private ["PSs8Hashable", "UIAlertAction"]
 - !private ["PSs8Hashable", "UIAlertController"]
 - !private ["PSs8Hashable", "UITableViewCell"]
@@ -349,10 +372,11 @@ depends-member:
 - !private ["PSs8Hashable", "addTextFieldWithConfigurationHandler"]
 - ["PSs8Hashable", "addWorkout"]
 - !private ["PSs8Hashable", "cellForRowAtIndexPath"]
+- ["PSs8Hashable", "confirmDelete"]
 - !private ["PSs8Hashable", "dequeueReusableCellWithIdentifier"]
 - !private ["PSs8Hashable", "destinationViewController"]
 - ["PSs8Hashable", "didReceiveMemoryWarning"]
-- !private ["PSs8Hashable", "getIndex"]
+- ["PSs8Hashable", "getIndex"]
 - !private ["PSs8Hashable", "identifier"]
 - ["PSs8Hashable", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSs8Hashable", "indexPathForSelectedRow"]
@@ -396,17 +420,23 @@ depends-member:
 - ["PSs8Hashable", ""]
 - !private ["PSs9Indexable", "Generator"]
 - !private ["PSs9Indexable", "Index"]
-- !private ["PSs9Indexable", "Key"]
 - !private ["PSs9Indexable", "SubSequence"]
-- !private ["PSs9Indexable", "Value"]
 - !private ["PSs9Indexable", "_Element"]
 - !private ["PSs9Indexable", "append"]
+- !private ["PSs9Indexable", "capacity"]
 - !private ["PSs9Indexable", "count"]
 - !private ["PSs9Indexable", "first"]
+- !private ["PSs9Indexable", "indexOf"]
+- !private ["PSs9Indexable", "removeAtIndex"]
 - !private ["PSs9Indexable", "subscript"]
 - !private ["VSs17IndexingGenerator", "Element"]
 - !private ["Si", "Distance"]
 - !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "deinit"]
+- !private ["VSs5Int16", "deinit"]
+- !private ["VSs5Int32", "deinit"]
+- !private ["VSs5Int64", "deinit"]
+- !private ["VSs4Int8", "deinit"]
 - !private ["PSs21IntegerArithmeticType", "Distance"]
 - !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
 - !private ["PSs25IntegerLiteralConvertible", "Distance"]
@@ -415,29 +445,39 @@ depends-member:
 - !private ["PSs11IntegerType", "IntegerLiteralType"]
 - !private ["PSs14MirrorPathType", "Distance"]
 - !private ["PSs14MirrorPathType", "IntegerLiteralType"]
+- !private ["PSs14MirrorPathType", "init"]
 - !private ["PSs21MutableCollectionType", "Generator"]
 - !private ["PSs21MutableCollectionType", "Index"]
 - !private ["PSs21MutableCollectionType", "SubSequence"]
 - !private ["PSs21MutableCollectionType", "_Element"]
 - !private ["PSs21MutableCollectionType", "append"]
+- !private ["PSs21MutableCollectionType", "capacity"]
 - !private ["PSs21MutableCollectionType", "count"]
 - !private ["PSs21MutableCollectionType", "first"]
+- !private ["PSs21MutableCollectionType", "indexOf"]
+- !private ["PSs21MutableCollectionType", "removeAtIndex"]
 - !private ["PSs21MutableCollectionType", "subscript"]
 - !private ["PSs16MutableIndexable", "Generator"]
 - !private ["PSs16MutableIndexable", "Index"]
 - !private ["PSs16MutableIndexable", "SubSequence"]
 - !private ["PSs16MutableIndexable", "_Element"]
 - !private ["PSs16MutableIndexable", "append"]
+- !private ["PSs16MutableIndexable", "capacity"]
 - !private ["PSs16MutableIndexable", "count"]
 - !private ["PSs16MutableIndexable", "first"]
+- !private ["PSs16MutableIndexable", "indexOf"]
+- !private ["PSs16MutableIndexable", "removeAtIndex"]
 - !private ["PSs16MutableIndexable", "subscript"]
 - !private ["PSs16MutableSliceable", "Generator"]
 - !private ["PSs16MutableSliceable", "Index"]
 - !private ["PSs16MutableSliceable", "SubSequence"]
 - !private ["PSs16MutableSliceable", "_Element"]
 - !private ["PSs16MutableSliceable", "append"]
+- !private ["PSs16MutableSliceable", "capacity"]
 - !private ["PSs16MutableSliceable", "count"]
 - !private ["PSs16MutableSliceable", "first"]
+- !private ["PSs16MutableSliceable", "indexOf"]
+- !private ["PSs16MutableSliceable", "removeAtIndex"]
 - !private ["PSs16MutableSliceable", "subscript"]
 - !private ["PSo8NSCoding", "NSUserDefaults"]
 - !private ["PSo8NSCoding", "UIAlertAction"]
@@ -447,9 +487,10 @@ depends-member:
 - !private ["PSo8NSCoding", "addTextFieldWithConfigurationHandler"]
 - ["PSo8NSCoding", "addWorkout"]
 - !private ["PSo8NSCoding", "cellForRowAtIndexPath"]
+- ["PSo8NSCoding", "confirmDelete"]
 - !private ["PSo8NSCoding", "dequeueReusableCellWithIdentifier"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
-- !private ["PSo8NSCoding", "getIndex"]
+- ["PSo8NSCoding", "getIndex"]
 - ["PSo8NSCoding", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo8NSCoding", "indexPathForSelectedRow"]
 - ["PSo8NSCoding", "init"]
@@ -496,8 +537,9 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "addAction"]
 - !private ["PSo26NSExtensionRequestHandling", "addTextFieldWithConfigurationHandler"]
 - ["PSo26NSExtensionRequestHandling", "addWorkout"]
+- ["PSo26NSExtensionRequestHandling", "confirmDelete"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
-- !private ["PSo26NSExtensionRequestHandling", "getIndex"]
+- ["PSo26NSExtensionRequestHandling", "getIndex"]
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo26NSExtensionRequestHandling", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "navigationItem"]
@@ -528,8 +570,8 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "workouts"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["CSo11NSIndexPath", "row"]
+- !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "AnyObject"]
-- ["CSo8NSObject", "Dictionary"]
 - !private ["CSo8NSObject", "ExercisesViewController"]
 - ["CSo8NSObject", "Int"]
 - ["CSo8NSObject", "NSIndexPath"]
@@ -540,16 +582,18 @@ depends-member:
 - ["CSo8NSObject", "UIStoryboardSegue"]
 - ["CSo8NSObject", "UITableView"]
 - ["CSo8NSObject", "UITableViewCell"]
+- ["CSo8NSObject", "UITableViewCellEditingStyle"]
 - !private ["CSo8NSObject", "UITextField"]
 - !private ["CSo8NSObject", "Void"]
 - !private ["CSo8NSObject", "addAction"]
 - !private ["CSo8NSObject", "addTextFieldWithConfigurationHandler"]
 - ["CSo8NSObject", "addWorkout"]
 - !private ["CSo8NSObject", "cellForRowAtIndexPath"]
+- ["CSo8NSObject", "confirmDelete"]
 - !private ["CSo8NSObject", "dequeueReusableCellWithIdentifier"]
 - !private ["CSo8NSObject", "destinationViewController"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
-- !private ["CSo8NSObject", "getIndex"]
+- ["CSo8NSObject", "getIndex"]
 - !private ["CSo8NSObject", "identifier"]
 - ["CSo8NSObject", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["CSo8NSObject", "indexPathForSelectedRow"]
@@ -598,10 +642,11 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "addTextFieldWithConfigurationHandler"]
 - ["PSo16NSObjectProtocol", "addWorkout"]
 - !private ["PSo16NSObjectProtocol", "cellForRowAtIndexPath"]
+- ["PSo16NSObjectProtocol", "confirmDelete"]
 - !private ["PSo16NSObjectProtocol", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo16NSObjectProtocol", "destinationViewController"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
-- !private ["PSo16NSObjectProtocol", "getIndex"]
+- ["PSo16NSObjectProtocol", "getIndex"]
 - !private ["PSo16NSObjectProtocol", "identifier"]
 - ["PSo16NSObjectProtocol", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo16NSObjectProtocol", "indexPathForSelectedRow"]
@@ -643,13 +688,16 @@ depends-member:
 - ["PSo16NSObjectProtocol", "workoutTableView"]
 - ["PSo16NSObjectProtocol", "workouts"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "row"]
+- !private ["CSo8NSString", "init"]
 - !private ["CSo14NSUserDefaults", "objectForKey"]
 - !private ["CSo14NSUserDefaults", "setObject"]
 - !private ["CSo14NSUserDefaults", "standardUserDefaults"]
 - ["PSs21NilLiteralConvertible", "Some"]
 - ["Sq", "Some"]
 - !private ["Sq", "deinit"]
+- !private ["PSs16OutputStreamType", "init"]
 - !private ["PSs21RandomAccessIndexType", "Distance"]
 - !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
 - !private ["PSs30RangeReplaceableCollectionType", "Generator"]
@@ -657,22 +705,30 @@ depends-member:
 - !private ["PSs30RangeReplaceableCollectionType", "SubSequence"]
 - !private ["PSs30RangeReplaceableCollectionType", "_Element"]
 - !private ["PSs30RangeReplaceableCollectionType", "append"]
+- !private ["PSs30RangeReplaceableCollectionType", "capacity"]
 - !private ["PSs30RangeReplaceableCollectionType", "count"]
 - !private ["PSs30RangeReplaceableCollectionType", "first"]
+- !private ["PSs30RangeReplaceableCollectionType", "indexOf"]
+- !private ["PSs30RangeReplaceableCollectionType", "removeAtIndex"]
 - !private ["PSs30RangeReplaceableCollectionType", "subscript"]
+- !private ["PSs16RawRepresentable", "ActionSheet"]
 - !private ["PSs16RawRepresentable", "Alert"]
 - !private ["PSs16RawRepresentable", "Cancel"]
 - !private ["PSs16RawRepresentable", "Default"]
+- !private ["PSs16RawRepresentable", "Delete"]
+- !private ["PSs16RawRepresentable", "Destructive"]
+- !private ["PSs16RawRepresentable", "RawValue"]
 - !private ["PSs12SequenceType", "Element"]
 - !private ["PSs12SequenceType", "Generator"]
 - !private ["PSs12SequenceType", "Index"]
-- !private ["PSs12SequenceType", "Key"]
 - !private ["PSs12SequenceType", "SubSequence"]
-- !private ["PSs12SequenceType", "Value"]
 - !private ["PSs12SequenceType", "_Element"]
 - !private ["PSs12SequenceType", "append"]
+- !private ["PSs12SequenceType", "capacity"]
 - !private ["PSs12SequenceType", "count"]
 - !private ["PSs12SequenceType", "first"]
+- !private ["PSs12SequenceType", "indexOf"]
+- !private ["PSs12SequenceType", "removeAtIndex"]
 - !private ["PSs12SequenceType", "subscript"]
 - !private ["PSs17SignedIntegerType", "Distance"]
 - !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
@@ -682,9 +738,12 @@ depends-member:
 - !private ["VSs5Slice", "Index"]
 - !private ["VSs5Slice", "SubSequence"]
 - !private ["VSs5Slice", "_Element"]
+- !private ["PSs10Streamable", "init"]
 - !private ["PSs10Strideable", "Distance"]
 - !private ["PSs10Strideable", "IntegerLiteralType"]
-- !private ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["PSs30StringInterpolationConvertible", "init"]
+- !private ["PSs24StringLiteralConvertible", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "cellForRowAtIndexPath"]
 - !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo29UIAccessibilityIdentification", "indexPathForSelectedRow"]
@@ -696,10 +755,12 @@ depends-member:
 - !private ["CSo13UIAlertAction", "init"]
 - !private ["OSC18UIAlertActionStyle", "Cancel"]
 - !private ["OSC18UIAlertActionStyle", "Default"]
+- !private ["OSC18UIAlertActionStyle", "Destructive"]
 - !private ["CSo17UIAlertController", "addAction"]
 - !private ["CSo17UIAlertController", "addTextFieldWithConfigurationHandler"]
 - !private ["CSo17UIAlertController", "init"]
 - !private ["CSo17UIAlertController", "textFields"]
+- !private ["OSC22UIAlertControllerStyle", "ActionSheet"]
 - !private ["OSC22UIAlertControllerStyle", "Alert"]
 - !private ["PSo12UIAppearance", "cellForRowAtIndexPath"]
 - !private ["PSo12UIAppearance", "dequeueReusableCellWithIdentifier"]
@@ -717,9 +778,10 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "addTextFieldWithConfigurationHandler"]
 - ["PSo21UIAppearanceContainer", "addWorkout"]
 - !private ["PSo21UIAppearanceContainer", "cellForRowAtIndexPath"]
+- ["PSo21UIAppearanceContainer", "confirmDelete"]
 - !private ["PSo21UIAppearanceContainer", "dequeueReusableCellWithIdentifier"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
-- !private ["PSo21UIAppearanceContainer", "getIndex"]
+- ["PSo21UIAppearanceContainer", "getIndex"]
 - ["PSo21UIAppearanceContainer", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo21UIAppearanceContainer", "indexPathForSelectedRow"]
 - ["PSo21UIAppearanceContainer", "init"]
@@ -762,8 +824,9 @@ depends-member:
 - !private ["PSo18UIContentContainer", "addAction"]
 - !private ["PSo18UIContentContainer", "addTextFieldWithConfigurationHandler"]
 - ["PSo18UIContentContainer", "addWorkout"]
+- ["PSo18UIContentContainer", "confirmDelete"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
-- !private ["PSo18UIContentContainer", "getIndex"]
+- ["PSo18UIContentContainer", "getIndex"]
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UIContentContainer", "init"]
 - !private ["PSo18UIContentContainer", "navigationItem"]
@@ -819,9 +882,10 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "addTextFieldWithConfigurationHandler"]
 - ["PSo18UIFocusEnvironment", "addWorkout"]
 - !private ["PSo18UIFocusEnvironment", "cellForRowAtIndexPath"]
+- ["PSo18UIFocusEnvironment", "confirmDelete"]
 - !private ["PSo18UIFocusEnvironment", "dequeueReusableCellWithIdentifier"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
-- !private ["PSo18UIFocusEnvironment", "getIndex"]
+- ["PSo18UIFocusEnvironment", "getIndex"]
 - ["PSo18UIFocusEnvironment", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo18UIFocusEnvironment", "indexPathForSelectedRow"]
 - ["PSo18UIFocusEnvironment", "init"]
@@ -863,7 +927,6 @@ depends-member:
 - !private ["CSo7UILabel", "text"]
 - !private ["CSo16UINavigationItem", "title"]
 - ["CSo11UIResponder", "AnyObject"]
-- ["CSo11UIResponder", "Dictionary"]
 - !private ["CSo11UIResponder", "ExercisesViewController"]
 - ["CSo11UIResponder", "Int"]
 - ["CSo11UIResponder", "NSIndexPath"]
@@ -874,15 +937,17 @@ depends-member:
 - ["CSo11UIResponder", "UIStoryboardSegue"]
 - ["CSo11UIResponder", "UITableView"]
 - ["CSo11UIResponder", "UITableViewCell"]
+- ["CSo11UIResponder", "UITableViewCellEditingStyle"]
 - !private ["CSo11UIResponder", "UITextField"]
 - !private ["CSo11UIResponder", "Void"]
 - !private ["CSo11UIResponder", "addAction"]
 - !private ["CSo11UIResponder", "addTextFieldWithConfigurationHandler"]
 - ["CSo11UIResponder", "addWorkout"]
 - !private ["CSo11UIResponder", "cellForRowAtIndexPath"]
+- ["CSo11UIResponder", "confirmDelete"]
 - !private ["CSo11UIResponder", "dequeueReusableCellWithIdentifier"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
-- !private ["CSo11UIResponder", "getIndex"]
+- ["CSo11UIResponder", "getIndex"]
 - ["CSo11UIResponder", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["CSo11UIResponder", "indexPathForSelectedRow"]
 - ["CSo11UIResponder", "init"]
@@ -926,7 +991,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "UIAlertAction"]
 - !private ["PSo20UIScrollViewDelegate", "UIAlertController"]
 - !private ["PSo20UIScrollViewDelegate", "UITableViewCell"]
-- !private ["PSo20UIScrollViewDelegate", "getIndex"]
+- !private ["PSo20UIScrollViewDelegate", "confirmDelete"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo20UIScrollViewDelegate", "navigationItem"]
 - ["PSo20UIScrollViewDelegate", "numberOfSectionsInTableView"]
@@ -948,6 +1013,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "sectionIndexTitlesForTableView"]
 - ["PSo20UIScrollViewDelegate", "tableView"]
 - ["PSo20UIScrollViewDelegate", "viewForZoomingInScrollView"]
+- !private ["PSo20UIScrollViewDelegate", "workout"]
 - !private ["PSo20UIScrollViewDelegate", "workoutTableView"]
 - !private ["PSo20UIScrollViewDelegate", "workouts"]
 - ["PSo20UIScrollViewDelegate", ""]
@@ -958,8 +1024,9 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "addAction"]
 - !private ["PSo16UIStateRestoring", "addTextFieldWithConfigurationHandler"]
 - ["PSo16UIStateRestoring", "addWorkout"]
+- ["PSo16UIStateRestoring", "confirmDelete"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
-- !private ["PSo16UIStateRestoring", "getIndex"]
+- ["PSo16UIStateRestoring", "getIndex"]
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo16UIStateRestoring", "init"]
 - !private ["PSo16UIStateRestoring", "navigationItem"]
@@ -997,11 +1064,14 @@ depends-member:
 - !private ["CSo11UITableView", "registerClass"]
 - !private ["CSo11UITableView", "reloadData"]
 - !private ["CSo15UITableViewCell", "textLabel"]
+- !private ["OSC27UITableViewCellEditingStyle", "Delete"]
+- !private ["OSC27UITableViewCellEditingStyle", "RawValue"]
+- !private ["OSC27UITableViewCellEditingStyle", "deinit"]
 - !private ["PSo21UITableViewDataSource", "NSUserDefaults"]
 - !private ["PSo21UITableViewDataSource", "UIAlertAction"]
 - !private ["PSo21UITableViewDataSource", "UIAlertController"]
 - !private ["PSo21UITableViewDataSource", "UITableViewCell"]
-- !private ["PSo21UITableViewDataSource", "getIndex"]
+- !private ["PSo21UITableViewDataSource", "confirmDelete"]
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo21UITableViewDataSource", "navigationItem"]
 - ["PSo21UITableViewDataSource", "numberOfSectionsInTableView"]
@@ -1023,6 +1093,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", "sectionIndexTitlesForTableView"]
 - ["PSo21UITableViewDataSource", "tableView"]
 - ["PSo21UITableViewDataSource", "viewForZoomingInScrollView"]
+- !private ["PSo21UITableViewDataSource", "workout"]
 - !private ["PSo21UITableViewDataSource", "workoutTableView"]
 - !private ["PSo21UITableViewDataSource", "workouts"]
 - ["PSo21UITableViewDataSource", ""]
@@ -1030,7 +1101,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "UIAlertAction"]
 - !private ["PSo19UITableViewDelegate", "UIAlertController"]
 - !private ["PSo19UITableViewDelegate", "UITableViewCell"]
-- !private ["PSo19UITableViewDelegate", "getIndex"]
+- !private ["PSo19UITableViewDelegate", "confirmDelete"]
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo19UITableViewDelegate", "navigationItem"]
 - ["PSo19UITableViewDelegate", "numberOfSectionsInTableView"]
@@ -1052,6 +1123,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", "sectionIndexTitlesForTableView"]
 - ["PSo19UITableViewDelegate", "tableView"]
 - ["PSo19UITableViewDelegate", "viewForZoomingInScrollView"]
+- !private ["PSo19UITableViewDelegate", "workout"]
 - !private ["PSo19UITableViewDelegate", "workoutTableView"]
 - !private ["PSo19UITableViewDelegate", "workouts"]
 - ["PSo19UITableViewDelegate", ""]
@@ -1069,9 +1141,10 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "addTextFieldWithConfigurationHandler"]
 - ["PSo18UITraitEnvironment", "addWorkout"]
 - !private ["PSo18UITraitEnvironment", "cellForRowAtIndexPath"]
+- ["PSo18UITraitEnvironment", "confirmDelete"]
 - !private ["PSo18UITraitEnvironment", "dequeueReusableCellWithIdentifier"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
-- !private ["PSo18UITraitEnvironment", "getIndex"]
+- ["PSo18UITraitEnvironment", "getIndex"]
 - ["PSo18UITraitEnvironment", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo18UITraitEnvironment", "indexPathForSelectedRow"]
 - ["PSo18UITraitEnvironment", "init"]
@@ -1116,7 +1189,6 @@ depends-member:
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "textLabel"]
 - ["CSo16UIViewController", "AnyObject"]
-- ["CSo16UIViewController", "Dictionary"]
 - !private ["CSo16UIViewController", "ExercisesViewController"]
 - ["CSo16UIViewController", "Int"]
 - ["CSo16UIViewController", "NSIndexPath"]
@@ -1127,14 +1199,16 @@ depends-member:
 - ["CSo16UIViewController", "UIStoryboardSegue"]
 - ["CSo16UIViewController", "UITableView"]
 - ["CSo16UIViewController", "UITableViewCell"]
+- ["CSo16UIViewController", "UITableViewCellEditingStyle"]
 - !private ["CSo16UIViewController", "UITextField"]
 - !private ["CSo16UIViewController", "Void"]
 - !private ["CSo16UIViewController", "addAction"]
 - !private ["CSo16UIViewController", "addTextFieldWithConfigurationHandler"]
 - ["CSo16UIViewController", "addWorkout"]
+- ["CSo16UIViewController", "confirmDelete"]
 - !private ["CSo16UIViewController", "deinit"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
-- !private ["CSo16UIViewController", "getIndex"]
+- ["CSo16UIViewController", "getIndex"]
 - ["CSo16UIViewController", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo16UIViewController", "init"]
 - !private ["CSo16UIViewController", "navigationItem"]
@@ -1164,8 +1238,14 @@ depends-member:
 - ["CSo16UIViewController", "workoutTableView"]
 - ["CSo16UIViewController", "workouts"]
 - ["CSo16UIViewController", ""]
+- !private ["Su", "deinit"]
+- !private ["VSs6UInt16", "deinit"]
+- !private ["VSs6UInt32", "deinit"]
+- !private ["VSs6UInt64", "deinit"]
+- !private ["VSs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
 - ["C13myFitProgress14ViewController", "AnyObject"]
-- ["C13myFitProgress14ViewController", "Dictionary"]
 - !private ["C13myFitProgress14ViewController", "ExercisesViewController"]
 - ["C13myFitProgress14ViewController", "Int"]
 - ["C13myFitProgress14ViewController", "NSIndexPath"]
@@ -1176,12 +1256,14 @@ depends-member:
 - ["C13myFitProgress14ViewController", "UIStoryboardSegue"]
 - ["C13myFitProgress14ViewController", "UITableView"]
 - ["C13myFitProgress14ViewController", "UITableViewCell"]
+- ["C13myFitProgress14ViewController", "UITableViewCellEditingStyle"]
 - !private ["C13myFitProgress14ViewController", "UITextField"]
 - !private ["C13myFitProgress14ViewController", "Void"]
 - ["C13myFitProgress14ViewController", "addWorkout"]
+- ["C13myFitProgress14ViewController", "confirmDelete"]
 - ["C13myFitProgress14ViewController", "deinit"]
 - ["C13myFitProgress14ViewController", "didReceiveMemoryWarning"]
-- !private ["C13myFitProgress14ViewController", "getIndex"]
+- ["C13myFitProgress14ViewController", "getIndex"]
 - ["C13myFitProgress14ViewController", "indexPathForPreferredFocusedViewInTableView"]
 - ["C13myFitProgress14ViewController", "init"]
 - !private ["C13myFitProgress14ViewController", "navigationItem"]
@@ -1213,19 +1295,30 @@ depends-member:
 - !private ["PSs10_ArrayType", "SubSequence"]
 - !private ["PSs10_ArrayType", "_Element"]
 - !private ["PSs10_ArrayType", "append"]
+- !private ["PSs10_ArrayType", "capacity"]
 - !private ["PSs10_ArrayType", "count"]
 - !private ["PSs10_ArrayType", "first"]
+- !private ["PSs10_ArrayType", "indexOf"]
+- !private ["PSs10_ArrayType", "removeAtIndex"]
 - !private ["PSs10_ArrayType", "subscript"]
 - !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
 - !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "init"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs16_CocoaStringType", "init"]
 - !private ["PSs24_DestructorSafeContainer", "Generator"]
 - !private ["PSs24_DestructorSafeContainer", "Index"]
 - !private ["PSs24_DestructorSafeContainer", "SubSequence"]
 - !private ["PSs24_DestructorSafeContainer", "_Element"]
 - !private ["PSs24_DestructorSafeContainer", "append"]
+- !private ["PSs24_DestructorSafeContainer", "capacity"]
 - !private ["PSs24_DestructorSafeContainer", "count"]
 - !private ["PSs24_DestructorSafeContainer", "first"]
+- !private ["PSs24_DestructorSafeContainer", "indexOf"]
+- !private ["PSs24_DestructorSafeContainer", "removeAtIndex"]
 - !private ["PSs24_DestructorSafeContainer", "subscript"]
 - !private ["PSs14_Incrementable", "Distance"]
 - !private ["PSs14_Incrementable", "IntegerLiteralType"]
@@ -1237,14 +1330,16 @@ depends-member:
 - !private ["PSs21_ObjectiveCBridgeable", "Generator"]
 - !private ["PSs21_ObjectiveCBridgeable", "Index"]
 - !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
-- !private ["PSs21_ObjectiveCBridgeable", "Key"]
 - !private ["PSs21_ObjectiveCBridgeable", "SubSequence"]
-- !private ["PSs21_ObjectiveCBridgeable", "Value"]
 - !private ["PSs21_ObjectiveCBridgeable", "_Element"]
 - !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["PSs21_ObjectiveCBridgeable", "append"]
+- !private ["PSs21_ObjectiveCBridgeable", "capacity"]
 - !private ["PSs21_ObjectiveCBridgeable", "count"]
 - !private ["PSs21_ObjectiveCBridgeable", "first"]
+- !private ["PSs21_ObjectiveCBridgeable", "indexOf"]
+- !private ["PSs21_ObjectiveCBridgeable", "init"]
+- !private ["PSs21_ObjectiveCBridgeable", "removeAtIndex"]
 - !private ["PSs21_ObjectiveCBridgeable", "subscript"]
 - !private ["VSs26_OptionalNilComparisonType", "deinit"]
 - !private ["PSs22_RandomAccessAmbiguity", "Distance"]
@@ -1253,21 +1348,23 @@ depends-member:
 - !private ["PSs12_Reflectable", "Generator"]
 - !private ["PSs12_Reflectable", "Index"]
 - !private ["PSs12_Reflectable", "IntegerLiteralType"]
-- !private ["PSs12_Reflectable", "Key"]
 - ["PSs12_Reflectable", "Some"]
 - !private ["PSs12_Reflectable", "SubSequence"]
-- !private ["PSs12_Reflectable", "Value"]
 - !private ["PSs12_Reflectable", "_Element"]
 - !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["PSs12_Reflectable", "append"]
+- !private ["PSs12_Reflectable", "capacity"]
 - !private ["PSs12_Reflectable", "cellForRowAtIndexPath"]
 - !private ["PSs12_Reflectable", "count"]
 - !private ["PSs12_Reflectable", "dequeueReusableCellWithIdentifier"]
 - !private ["PSs12_Reflectable", "first"]
+- !private ["PSs12_Reflectable", "indexOf"]
 - !private ["PSs12_Reflectable", "indexPathForSelectedRow"]
+- !private ["PSs12_Reflectable", "init"]
 - !private ["PSs12_Reflectable", "placeholder"]
 - !private ["PSs12_Reflectable", "registerClass"]
 - !private ["PSs12_Reflectable", "reloadData"]
+- !private ["PSs12_Reflectable", "removeAtIndex"]
 - !private ["PSs12_Reflectable", "subscript"]
 - !private ["PSs12_Reflectable", "text"]
 - !private ["PSs12_Reflectable", "textLabel"]
@@ -1286,20 +1383,26 @@ depends-nominal:
 - !private "PSs25BooleanLiteralConvertible"
 - !private "PSs11BooleanType"
 - "PSs11CVarArgType"
+- !private "VSs9Character"
 - !private "PSs14CollectionType"
 - !private "PSs10Comparable"
 - "PSs28CustomDebugStringConvertible"
 - "PSs23CustomStringConvertible"
-- !private "VSs10Dictionary"
-- !private "PSs28DictionaryLiteralConvertible"
+- !private "Sd"
 - "PSs9Equatable"
 - !private "C13myFitProgress23ExercisesViewController"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Sf"
 - !private "PSs16ForwardIndexType"
 - !private "PSs13GeneratorType"
 - "PSs8Hashable"
 - !private "PSs9Indexable"
 - !private "VSs17IndexingGenerator"
 - !private "Si"
+- !private "VSs5Int16"
+- !private "VSs5Int32"
+- !private "VSs5Int64"
+- !private "VSs4Int8"
 - !private "PSs21IntegerArithmeticType"
 - !private "PSs25IntegerLiteralConvertible"
 - !private "PSs11IntegerType"
@@ -1311,12 +1414,15 @@ depends-nominal:
 - !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
 - !private "CSo11NSIndexPath"
+- !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
 - !private "CSo14NSUserDefaults"
 - "PSs21NilLiteralConvertible"
 - "Sq"
+- !private "PSs16OutputStreamType"
 - !private "PSs21RandomAccessIndexType"
 - !private "PSs30RangeReplaceableCollectionType"
 - !private "PSs16RawRepresentable"
@@ -1324,8 +1430,11 @@ depends-nominal:
 - !private "PSs17SignedIntegerType"
 - !private "PSs16SignedNumberType"
 - !private "VSs5Slice"
+- !private "PSs10Streamable"
 - !private "PSs10Strideable"
 - !private "SS"
+- !private "PSs30StringInterpolationConvertible"
+- !private "PSs24StringLiteralConvertible"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "CSo13UIAlertAction"
 - !private "OSC18UIAlertActionStyle"
@@ -1349,6 +1458,7 @@ depends-nominal:
 - !private "CSo17UIStoryboardSegue"
 - !private "CSo11UITableView"
 - !private "CSo15UITableViewCell"
+- !private "OSC27UITableViewCellEditingStyle"
 - "PSo21UITableViewDataSource"
 - "PSo19UITableViewDelegate"
 - !private "CSo11UITextField"
@@ -1357,10 +1467,22 @@ depends-nominal:
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - "CSo16UIViewController"
+- !private "Su"
+- !private "VSs6UInt16"
+- !private "VSs6UInt32"
+- !private "VSs6UInt64"
+- !private "VSs5UInt8"
+- !private "Sc"
+- !private "PSs31UnicodeScalarLiteralConvertible"
 - "C13myFitProgress14ViewController"
 - !private "PSs10_ArrayType"
 - !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
 - !private "PSs33_BuiltinIntegerLiteralConvertible"
+- !private "PSs32_BuiltinStringLiteralConvertible"
+- !private "PSs37_BuiltinUTF16StringLiteralConvertible"
+- !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "PSs16_CocoaStringType"
 - !private "PSs24_DestructorSafeContainer"
 - !private "PSs14_Incrementable"
 - !private "PSs22_IntegerArithmeticType"
@@ -1381,4 +1503,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "af7054a53716d9de3e10619161d9fcf3"
+interface-hash: "fa1b1b042ed635cf803cda81ebe20456"

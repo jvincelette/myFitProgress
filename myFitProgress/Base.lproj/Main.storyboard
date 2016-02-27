@@ -82,11 +82,49 @@
                     </view>
                     <connections>
                         <outlet property="exerciseTableView" destination="mNv-oh-QsU" id="Url-41-BBW"/>
+                        <segue destination="zJn-d7-8u1" kind="show" identifier="setsSegue" id="m0N-Sf-WMe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ogB-Xz-7TE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1744" y="317"/>
+        </scene>
+        <!--Sets View Controller-->
+        <scene sceneID="PKp-4u-Ru8">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="zJn-d7-8u1" customClass="SetsViewController" customModule="myFitProgress" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="agu-pb-hsc"/>
+                        <viewControllerLayoutGuide type="bottom" id="LQW-zy-RBl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SrY-Iz-yGB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1ij-LN-hc5">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="zJn-d7-8u1" id="ah6-mU-Zm8"/>
+                                    <outlet property="delegate" destination="zJn-d7-8u1" id="Wkb-nJ-MFZ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="1ij-LN-hc5" secondAttribute="trailing" constant="-20" id="EGy-Cp-78S"/>
+                            <constraint firstItem="LQW-zy-RBl" firstAttribute="top" secondItem="1ij-LN-hc5" secondAttribute="bottom" id="aA2-UK-eZs"/>
+                            <constraint firstItem="1ij-LN-hc5" firstAttribute="top" secondItem="agu-pb-hsc" secondAttribute="bottom" id="q0x-DN-P3s"/>
+                            <constraint firstItem="1ij-LN-hc5" firstAttribute="leading" secondItem="SrY-Iz-yGB" secondAttribute="leadingMargin" constant="-20" id="rGZ-iT-U4j"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="setsTableView" destination="1ij-LN-hc5" id="qJm-aL-9wc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mYc-G4-fvl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2451" y="317"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="apz-4a-sYh">

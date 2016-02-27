@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     
-    var workouts: [Dictionary<String, AnyObject>] = []
+    var workouts: [String] = []
     @IBOutlet weak var workoutTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +19,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         self.navigationItem.title = "Fit Progress"
         
         let defaults = NSUserDefaults.standardUserDefaults()
-        if let savedData = defaults.objectForKey("SavedData") as? [Dictionary<String, AnyObject>] {
+        if let savedData = defaults.objectForKey("SavedData") as? [String] {
             workouts = savedData
         }
         
@@ -33,7 +33,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell:UITableViewCell = workoutTableView.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
         
-        cell.textLabel?.text = getWorkoutName(indexPath.row)
+        cell.textLabel?.text = workouts[indexPath.row]
         
         return cell
     }
@@ -42,10 +42,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         var loginTextField: UITextField?
         let alertController = UIAlertController(title: "Add a Workout", message: nil, preferredStyle: .Alert)
         let add = UIAlertAction(title: "Add", style: .Default, handler:{(action) -> Void in
-            var exercises: [Dictionary<String, AnyObject>] = []
-            var newWorkout: Dictionary<String, AnyObject> = ["Name": (alertController.textFields?.first?.text)!,
-                                "Exercises": exercises]
-            self.workouts.append(newWorkout);
+            self.workouts.append((alertController.textFields?.first?.text)!);
             self.workoutTableView.reloadData()
             self.save()
         });
@@ -70,11 +67,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "exerciseSegue" {
             if let destination = segue.destinationViewController as? ExercisesViewController {
-                let path = workoutTableView.indexPathForSelectedRow;
-                let cell = workoutTableView.cellForRowAtIndexPath(path!);
-                let label = cell!.textLabel?.text;
-                let index = getIndex(workouts, word: label!);
-                destination.workout = workouts[index];
+                let path = workoutTableView.indexPathForSelectedRow
+                let cell = workoutTableView.cellForRowAtIndexPath(path!)
+                let label = cell!.textLabel?.text
+                destination.workout = label!
             }
         }
     }
@@ -86,7 +82,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func confirmDelete(index:Int) {
-        let workoutName = getWorkoutName(index)
+        let workoutName = workouts[index]
         
         let alert = UIAlertController(title: "Delete Workout", message: "Are you sure you want to permanently delete the \(workoutName) workout?", preferredStyle: .ActionSheet)
         
@@ -108,23 +104,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         defaults.setObject(workouts, forKey: "SavedData")
     }
     
-    func getIndex(a: [Dictionary<String, AnyObject>], word: String) -> Int {
+    func getIndex(a: [String], word: String) -> Int {
         var workoutName: String
         for (var i = 0; i < a.capacity; i++) {
-            workoutName = getWorkoutName(i)
+            workoutName = workouts[i]
             if (workoutName == word) {
                 return i;
             }
         }
         return -1;
-    }
-    
-    func getWorkoutName(index: Int) -> String {
-        let workoutName: String
-        let currDict: Dictionary<String, AnyObject>
-        currDict = workouts[index]
-        workoutName = currDict["Name"] as? String ?? String()
-        return workoutName
     }
     
     override func didReceiveMemoryWarning() {

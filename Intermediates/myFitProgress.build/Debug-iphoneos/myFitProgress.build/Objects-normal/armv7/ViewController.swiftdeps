@@ -6,49 +6,45 @@ provides-nominal:
 provides-member:
 - ["C13myFitProgress14ViewController", ""]
 provides-dynamic-lookup:
-- "prepareForSegue"
+- "getIndex"
+- "workoutTableView"
+- "confirmDelete"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
 - "viewDidLoad"
 - "addWorkout"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "confirmDelete"
-- "save"
-- "getIndex"
+- "prepareForSegue"
 - "workouts"
-- "workoutTableView"
-- "getWorkoutName"
 - "didReceiveMemoryWarning"
+- "save"
 depends-top-level:
-- !private "??"
-- !private "Void"
-- !private "<"
-- "String"
-- "Dictionary"
-- "Int"
-- "UITableViewCellEditingStyle"
-- !private "=="
-- "ViewController"
-- !private "ExercisesViewController"
-- !private "NSUserDefaults"
-- !private "++"
-- !private "StringLiteralType"
-- "UITableView"
-- "UIViewController"
-- !private "UIAlertAction"
-- "UITableViewCell"
-- !private "UITextField"
-- "AnyObject"
 - "NSIndexPath"
-- "UITableViewDelegate"
-- !private "UIAlertController"
-- !private "BooleanLiteralType"
-- "UITableViewDataSource"
+- !private "++"
+- "ViewController"
+- !private "UIAlertAction"
+- "String"
+- "AnyObject"
 - "UIStoryboardSegue"
+- !private "BooleanLiteralType"
+- !private "NSUserDefaults"
+- "UITableViewCellEditingStyle"
+- "UITableViewDelegate"
+- "UITableViewDataSource"
+- !private "UIAlertController"
+- !private "=="
+- !private "Void"
+- "Int"
+- !private "UITextField"
+- "UITableView"
+- !private "ExercisesViewController"
+- !private "<"
+- !private "StringLiteralType"
+- "UIViewController"
+- "UITableViewCell"
 depends-member:
 - !private ["PSs9AnyObject", "NSUserDefaults"]
-- !private ["PSs9AnyObject", "String"]
 - !private ["PSs9AnyObject", "UIAlertAction"]
 - !private ["PSs9AnyObject", "UIAlertController"]
 - !private ["PSs9AnyObject", "UITableViewCell"]
@@ -61,7 +57,6 @@ depends-member:
 - !private ["PSs9AnyObject", "destinationViewController"]
 - ["PSs9AnyObject", "didReceiveMemoryWarning"]
 - ["PSs9AnyObject", "getIndex"]
-- ["PSs9AnyObject", "getWorkoutName"]
 - !private ["PSs9AnyObject", "identifier"]
 - ["PSs9AnyObject", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSs9AnyObject", "indexPathForSelectedRow"]
@@ -137,7 +132,6 @@ depends-member:
 - !private ["PSs11CVarArgType", "Distance"]
 - !private ["PSs11CVarArgType", "IntegerLiteralType"]
 - !private ["PSs11CVarArgType", "NSUserDefaults"]
-- !private ["PSs11CVarArgType", "String"]
 - !private ["PSs11CVarArgType", "UIAlertAction"]
 - !private ["PSs11CVarArgType", "UIAlertController"]
 - !private ["PSs11CVarArgType", "UITableViewCell"]
@@ -150,7 +144,6 @@ depends-member:
 - !private ["PSs11CVarArgType", "destinationViewController"]
 - ["PSs11CVarArgType", "didReceiveMemoryWarning"]
 - ["PSs11CVarArgType", "getIndex"]
-- ["PSs11CVarArgType", "getWorkoutName"]
 - !private ["PSs11CVarArgType", "identifier"]
 - ["PSs11CVarArgType", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSs11CVarArgType", "indexPathForSelectedRow"]
@@ -195,9 +188,7 @@ depends-member:
 - !private ["VSs9Character", "deinit"]
 - !private ["PSs14CollectionType", "Generator"]
 - !private ["PSs14CollectionType", "Index"]
-- !private ["PSs14CollectionType", "Key"]
 - !private ["PSs14CollectionType", "SubSequence"]
-- !private ["PSs14CollectionType", "Value"]
 - !private ["PSs14CollectionType", "_Element"]
 - !private ["PSs14CollectionType", "append"]
 - !private ["PSs14CollectionType", "capacity"]
@@ -210,10 +201,8 @@ depends-member:
 - !private ["PSs10Comparable", "init"]
 - !private ["PSs28CustomDebugStringConvertible", "Generator"]
 - !private ["PSs28CustomDebugStringConvertible", "Index"]
-- !private ["PSs28CustomDebugStringConvertible", "Key"]
 - ["PSs28CustomDebugStringConvertible", "Some"]
 - !private ["PSs28CustomDebugStringConvertible", "SubSequence"]
-- !private ["PSs28CustomDebugStringConvertible", "Value"]
 - !private ["PSs28CustomDebugStringConvertible", "_Element"]
 - !private ["PSs28CustomDebugStringConvertible", "append"]
 - !private ["PSs28CustomDebugStringConvertible", "capacity"]
@@ -226,14 +215,11 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "Generator"]
 - !private ["PSs23CustomStringConvertible", "Index"]
 - !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
-- !private ["PSs23CustomStringConvertible", "Key"]
 - !private ["PSs23CustomStringConvertible", "NSUserDefaults"]
-- !private ["PSs23CustomStringConvertible", "String"]
 - !private ["PSs23CustomStringConvertible", "SubSequence"]
 - !private ["PSs23CustomStringConvertible", "UIAlertAction"]
 - !private ["PSs23CustomStringConvertible", "UIAlertController"]
 - !private ["PSs23CustomStringConvertible", "UITableViewCell"]
-- !private ["PSs23CustomStringConvertible", "Value"]
 - !private ["PSs23CustomStringConvertible", "_Element"]
 - !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs23CustomStringConvertible", "addAction"]
@@ -249,7 +235,6 @@ depends-member:
 - ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
 - !private ["PSs23CustomStringConvertible", "first"]
 - ["PSs23CustomStringConvertible", "getIndex"]
-- ["PSs23CustomStringConvertible", "getWorkoutName"]
 - !private ["PSs23CustomStringConvertible", "identifier"]
 - ["PSs23CustomStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSs23CustomStringConvertible", "indexPathForSelectedRow"]
@@ -293,12 +278,6 @@ depends-member:
 - ["PSs23CustomStringConvertible", "workoutTableView"]
 - ["PSs23CustomStringConvertible", "workouts"]
 - ["PSs23CustomStringConvertible", ""]
-- !private ["VSs10Dictionary", "Key"]
-- !private ["VSs10Dictionary", "Value"]
-- !private ["VSs10Dictionary", "subscript"]
-- !private ["PSs28DictionaryLiteralConvertible", "Key"]
-- !private ["PSs28DictionaryLiteralConvertible", "Value"]
-- !private ["PSs28DictionaryLiteralConvertible", "subscript"]
 - !private ["Sd", "deinit"]
 - !private ["PSs9Equatable", "ActionSheet"]
 - !private ["PSs9Equatable", "Alert"]
@@ -310,7 +289,6 @@ depends-member:
 - !private ["PSs9Equatable", "IntegerLiteralType"]
 - !private ["PSs9Equatable", "NSUserDefaults"]
 - !private ["PSs9Equatable", "RawValue"]
-- !private ["PSs9Equatable", "String"]
 - !private ["PSs9Equatable", "UIAlertAction"]
 - !private ["PSs9Equatable", "UIAlertController"]
 - !private ["PSs9Equatable", "UITableViewCell"]
@@ -324,7 +302,6 @@ depends-member:
 - !private ["PSs9Equatable", "destinationViewController"]
 - ["PSs9Equatable", "didReceiveMemoryWarning"]
 - ["PSs9Equatable", "getIndex"]
-- ["PSs9Equatable", "getWorkoutName"]
 - !private ["PSs9Equatable", "identifier"]
 - ["PSs9Equatable", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSs9Equatable", "indexPathForSelectedRow"]
@@ -382,7 +359,6 @@ depends-member:
 - !private ["PSs8Hashable", "IntegerLiteralType"]
 - !private ["PSs8Hashable", "NSUserDefaults"]
 - !private ["PSs8Hashable", "RawValue"]
-- !private ["PSs8Hashable", "String"]
 - !private ["PSs8Hashable", "UIAlertAction"]
 - !private ["PSs8Hashable", "UIAlertController"]
 - !private ["PSs8Hashable", "UITableViewCell"]
@@ -396,7 +372,6 @@ depends-member:
 - !private ["PSs8Hashable", "destinationViewController"]
 - ["PSs8Hashable", "didReceiveMemoryWarning"]
 - ["PSs8Hashable", "getIndex"]
-- ["PSs8Hashable", "getWorkoutName"]
 - !private ["PSs8Hashable", "identifier"]
 - ["PSs8Hashable", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSs8Hashable", "indexPathForSelectedRow"]
@@ -440,9 +415,7 @@ depends-member:
 - ["PSs8Hashable", ""]
 - !private ["PSs9Indexable", "Generator"]
 - !private ["PSs9Indexable", "Index"]
-- !private ["PSs9Indexable", "Key"]
 - !private ["PSs9Indexable", "SubSequence"]
-- !private ["PSs9Indexable", "Value"]
 - !private ["PSs9Indexable", "_Element"]
 - !private ["PSs9Indexable", "append"]
 - !private ["PSs9Indexable", "capacity"]
@@ -498,7 +471,6 @@ depends-member:
 - !private ["PSs16MutableSliceable", "removeAtIndex"]
 - !private ["PSs16MutableSliceable", "subscript"]
 - !private ["PSo8NSCoding", "NSUserDefaults"]
-- !private ["PSo8NSCoding", "String"]
 - !private ["PSo8NSCoding", "UIAlertAction"]
 - !private ["PSo8NSCoding", "UIAlertController"]
 - !private ["PSo8NSCoding", "UITableViewCell"]
@@ -510,7 +482,6 @@ depends-member:
 - !private ["PSo8NSCoding", "dequeueReusableCellWithIdentifier"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - ["PSo8NSCoding", "getIndex"]
-- ["PSo8NSCoding", "getWorkoutName"]
 - ["PSo8NSCoding", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo8NSCoding", "indexPathForSelectedRow"]
 - ["PSo8NSCoding", "init"]
@@ -551,7 +522,6 @@ depends-member:
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "row"]
 - !private ["PSo26NSExtensionRequestHandling", "NSUserDefaults"]
-- !private ["PSo26NSExtensionRequestHandling", "String"]
 - !private ["PSo26NSExtensionRequestHandling", "UIAlertAction"]
 - !private ["PSo26NSExtensionRequestHandling", "UIAlertController"]
 - !private ["PSo26NSExtensionRequestHandling", "UITableViewCell"]
@@ -561,7 +531,6 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "confirmDelete"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - ["PSo26NSExtensionRequestHandling", "getIndex"]
-- ["PSo26NSExtensionRequestHandling", "getWorkoutName"]
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo26NSExtensionRequestHandling", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "navigationItem"]
@@ -594,7 +563,6 @@ depends-member:
 - !private ["CSo11NSIndexPath", "row"]
 - !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "AnyObject"]
-- ["CSo8NSObject", "Dictionary"]
 - !private ["CSo8NSObject", "ExercisesViewController"]
 - ["CSo8NSObject", "Int"]
 - ["CSo8NSObject", "NSIndexPath"]
@@ -617,7 +585,6 @@ depends-member:
 - !private ["CSo8NSObject", "destinationViewController"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - ["CSo8NSObject", "getIndex"]
-- ["CSo8NSObject", "getWorkoutName"]
 - !private ["CSo8NSObject", "identifier"]
 - ["CSo8NSObject", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["CSo8NSObject", "indexPathForSelectedRow"]
@@ -659,7 +626,6 @@ depends-member:
 - ["CSo8NSObject", "workoutTableView"]
 - ["CSo8NSObject", "workouts"]
 - !private ["PSo16NSObjectProtocol", "NSUserDefaults"]
-- !private ["PSo16NSObjectProtocol", "String"]
 - !private ["PSo16NSObjectProtocol", "UIAlertAction"]
 - !private ["PSo16NSObjectProtocol", "UIAlertController"]
 - !private ["PSo16NSObjectProtocol", "UITableViewCell"]
@@ -672,7 +638,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "destinationViewController"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - ["PSo16NSObjectProtocol", "getIndex"]
-- ["PSo16NSObjectProtocol", "getWorkoutName"]
 - !private ["PSo16NSObjectProtocol", "identifier"]
 - ["PSo16NSObjectProtocol", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo16NSObjectProtocol", "indexPathForSelectedRow"]
@@ -746,9 +711,7 @@ depends-member:
 - !private ["PSs12SequenceType", "Element"]
 - !private ["PSs12SequenceType", "Generator"]
 - !private ["PSs12SequenceType", "Index"]
-- !private ["PSs12SequenceType", "Key"]
 - !private ["PSs12SequenceType", "SubSequence"]
-- !private ["PSs12SequenceType", "Value"]
 - !private ["PSs12SequenceType", "_Element"]
 - !private ["PSs12SequenceType", "append"]
 - !private ["PSs12SequenceType", "capacity"]
@@ -767,7 +730,6 @@ depends-member:
 - !private ["PSs10Streamable", "init"]
 - !private ["PSs10Strideable", "Distance"]
 - !private ["PSs10Strideable", "IntegerLiteralType"]
-- !private ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["PSs30StringInterpolationConvertible", "init"]
 - !private ["PSs24StringLiteralConvertible", "init"]
@@ -798,7 +760,6 @@ depends-member:
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "textLabel"]
 - !private ["PSo21UIAppearanceContainer", "NSUserDefaults"]
-- !private ["PSo21UIAppearanceContainer", "String"]
 - !private ["PSo21UIAppearanceContainer", "UIAlertAction"]
 - !private ["PSo21UIAppearanceContainer", "UIAlertController"]
 - !private ["PSo21UIAppearanceContainer", "UITableViewCell"]
@@ -810,7 +771,6 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "dequeueReusableCellWithIdentifier"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - ["PSo21UIAppearanceContainer", "getIndex"]
-- ["PSo21UIAppearanceContainer", "getWorkoutName"]
 - ["PSo21UIAppearanceContainer", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo21UIAppearanceContainer", "indexPathForSelectedRow"]
 - ["PSo21UIAppearanceContainer", "init"]
@@ -847,7 +807,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "workouts"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["PSo18UIContentContainer", "NSUserDefaults"]
-- !private ["PSo18UIContentContainer", "String"]
 - !private ["PSo18UIContentContainer", "UIAlertAction"]
 - !private ["PSo18UIContentContainer", "UIAlertController"]
 - !private ["PSo18UIContentContainer", "UITableViewCell"]
@@ -857,7 +816,6 @@ depends-member:
 - ["PSo18UIContentContainer", "confirmDelete"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - ["PSo18UIContentContainer", "getIndex"]
-- ["PSo18UIContentContainer", "getWorkoutName"]
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UIContentContainer", "init"]
 - !private ["PSo18UIContentContainer", "navigationItem"]
@@ -906,7 +864,6 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "textLabel"]
 - !private ["PSo18UIFocusEnvironment", "NSUserDefaults"]
-- !private ["PSo18UIFocusEnvironment", "String"]
 - !private ["PSo18UIFocusEnvironment", "UIAlertAction"]
 - !private ["PSo18UIFocusEnvironment", "UIAlertController"]
 - !private ["PSo18UIFocusEnvironment", "UITableViewCell"]
@@ -918,7 +875,6 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "dequeueReusableCellWithIdentifier"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UIFocusEnvironment", "getIndex"]
-- ["PSo18UIFocusEnvironment", "getWorkoutName"]
 - ["PSo18UIFocusEnvironment", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo18UIFocusEnvironment", "indexPathForSelectedRow"]
 - ["PSo18UIFocusEnvironment", "init"]
@@ -960,7 +916,6 @@ depends-member:
 - !private ["CSo7UILabel", "text"]
 - !private ["CSo16UINavigationItem", "title"]
 - ["CSo11UIResponder", "AnyObject"]
-- ["CSo11UIResponder", "Dictionary"]
 - !private ["CSo11UIResponder", "ExercisesViewController"]
 - ["CSo11UIResponder", "Int"]
 - ["CSo11UIResponder", "NSIndexPath"]
@@ -982,7 +937,6 @@ depends-member:
 - !private ["CSo11UIResponder", "dequeueReusableCellWithIdentifier"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - ["CSo11UIResponder", "getIndex"]
-- ["CSo11UIResponder", "getWorkoutName"]
 - ["CSo11UIResponder", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["CSo11UIResponder", "indexPathForSelectedRow"]
 - ["CSo11UIResponder", "init"]
@@ -1023,13 +977,10 @@ depends-member:
 - !private ["CSo12UIScrollView", "registerClass"]
 - !private ["CSo12UIScrollView", "reloadData"]
 - !private ["PSo20UIScrollViewDelegate", "NSUserDefaults"]
-- !private ["PSo20UIScrollViewDelegate", "String"]
 - !private ["PSo20UIScrollViewDelegate", "UIAlertAction"]
 - !private ["PSo20UIScrollViewDelegate", "UIAlertController"]
 - !private ["PSo20UIScrollViewDelegate", "UITableViewCell"]
 - !private ["PSo20UIScrollViewDelegate", "confirmDelete"]
-- !private ["PSo20UIScrollViewDelegate", "getIndex"]
-- !private ["PSo20UIScrollViewDelegate", "getWorkoutName"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo20UIScrollViewDelegate", "navigationItem"]
 - ["PSo20UIScrollViewDelegate", "numberOfSectionsInTableView"]
@@ -1056,7 +1007,6 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "workouts"]
 - ["PSo20UIScrollViewDelegate", ""]
 - !private ["PSo16UIStateRestoring", "NSUserDefaults"]
-- !private ["PSo16UIStateRestoring", "String"]
 - !private ["PSo16UIStateRestoring", "UIAlertAction"]
 - !private ["PSo16UIStateRestoring", "UIAlertController"]
 - !private ["PSo16UIStateRestoring", "UITableViewCell"]
@@ -1066,7 +1016,6 @@ depends-member:
 - ["PSo16UIStateRestoring", "confirmDelete"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - ["PSo16UIStateRestoring", "getIndex"]
-- ["PSo16UIStateRestoring", "getWorkoutName"]
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo16UIStateRestoring", "init"]
 - !private ["PSo16UIStateRestoring", "navigationItem"]
@@ -1108,13 +1057,10 @@ depends-member:
 - !private ["OSC27UITableViewCellEditingStyle", "RawValue"]
 - !private ["OSC27UITableViewCellEditingStyle", "deinit"]
 - !private ["PSo21UITableViewDataSource", "NSUserDefaults"]
-- !private ["PSo21UITableViewDataSource", "String"]
 - !private ["PSo21UITableViewDataSource", "UIAlertAction"]
 - !private ["PSo21UITableViewDataSource", "UIAlertController"]
 - !private ["PSo21UITableViewDataSource", "UITableViewCell"]
 - !private ["PSo21UITableViewDataSource", "confirmDelete"]
-- !private ["PSo21UITableViewDataSource", "getIndex"]
-- !private ["PSo21UITableViewDataSource", "getWorkoutName"]
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo21UITableViewDataSource", "navigationItem"]
 - ["PSo21UITableViewDataSource", "numberOfSectionsInTableView"]
@@ -1141,13 +1087,10 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "workouts"]
 - ["PSo21UITableViewDataSource", ""]
 - !private ["PSo19UITableViewDelegate", "NSUserDefaults"]
-- !private ["PSo19UITableViewDelegate", "String"]
 - !private ["PSo19UITableViewDelegate", "UIAlertAction"]
 - !private ["PSo19UITableViewDelegate", "UIAlertController"]
 - !private ["PSo19UITableViewDelegate", "UITableViewCell"]
 - !private ["PSo19UITableViewDelegate", "confirmDelete"]
-- !private ["PSo19UITableViewDelegate", "getIndex"]
-- !private ["PSo19UITableViewDelegate", "getWorkoutName"]
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo19UITableViewDelegate", "navigationItem"]
 - ["PSo19UITableViewDelegate", "numberOfSectionsInTableView"]
@@ -1180,7 +1123,6 @@ depends-member:
 - !private ["PSo17UITextInputTraits", "placeholder"]
 - !private ["PSo17UITextInputTraits", "text"]
 - !private ["PSo18UITraitEnvironment", "NSUserDefaults"]
-- !private ["PSo18UITraitEnvironment", "String"]
 - !private ["PSo18UITraitEnvironment", "UIAlertAction"]
 - !private ["PSo18UITraitEnvironment", "UIAlertController"]
 - !private ["PSo18UITraitEnvironment", "UITableViewCell"]
@@ -1192,7 +1134,6 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "dequeueReusableCellWithIdentifier"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UITraitEnvironment", "getIndex"]
-- ["PSo18UITraitEnvironment", "getWorkoutName"]
 - ["PSo18UITraitEnvironment", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo18UITraitEnvironment", "indexPathForSelectedRow"]
 - ["PSo18UITraitEnvironment", "init"]
@@ -1237,7 +1178,6 @@ depends-member:
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "textLabel"]
 - ["CSo16UIViewController", "AnyObject"]
-- ["CSo16UIViewController", "Dictionary"]
 - !private ["CSo16UIViewController", "ExercisesViewController"]
 - ["CSo16UIViewController", "Int"]
 - ["CSo16UIViewController", "NSIndexPath"]
@@ -1258,7 +1198,6 @@ depends-member:
 - !private ["CSo16UIViewController", "deinit"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - ["CSo16UIViewController", "getIndex"]
-- ["CSo16UIViewController", "getWorkoutName"]
 - ["CSo16UIViewController", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo16UIViewController", "init"]
 - !private ["CSo16UIViewController", "navigationItem"]
@@ -1296,7 +1235,6 @@ depends-member:
 - !private ["Sc", "deinit"]
 - !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
 - ["C13myFitProgress14ViewController", "AnyObject"]
-- ["C13myFitProgress14ViewController", "Dictionary"]
 - !private ["C13myFitProgress14ViewController", "ExercisesViewController"]
 - ["C13myFitProgress14ViewController", "Int"]
 - ["C13myFitProgress14ViewController", "NSIndexPath"]
@@ -1315,7 +1253,6 @@ depends-member:
 - ["C13myFitProgress14ViewController", "deinit"]
 - ["C13myFitProgress14ViewController", "didReceiveMemoryWarning"]
 - ["C13myFitProgress14ViewController", "getIndex"]
-- ["C13myFitProgress14ViewController", "getWorkoutName"]
 - ["C13myFitProgress14ViewController", "indexPathForPreferredFocusedViewInTableView"]
 - ["C13myFitProgress14ViewController", "init"]
 - !private ["C13myFitProgress14ViewController", "navigationItem"]
@@ -1380,9 +1317,7 @@ depends-member:
 - !private ["PSs21_ObjectiveCBridgeable", "Generator"]
 - !private ["PSs21_ObjectiveCBridgeable", "Index"]
 - !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
-- !private ["PSs21_ObjectiveCBridgeable", "Key"]
 - !private ["PSs21_ObjectiveCBridgeable", "SubSequence"]
-- !private ["PSs21_ObjectiveCBridgeable", "Value"]
 - !private ["PSs21_ObjectiveCBridgeable", "_Element"]
 - !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["PSs21_ObjectiveCBridgeable", "append"]
@@ -1399,10 +1334,8 @@ depends-member:
 - !private ["PSs12_Reflectable", "Generator"]
 - !private ["PSs12_Reflectable", "Index"]
 - !private ["PSs12_Reflectable", "IntegerLiteralType"]
-- !private ["PSs12_Reflectable", "Key"]
 - ["PSs12_Reflectable", "Some"]
 - !private ["PSs12_Reflectable", "SubSequence"]
-- !private ["PSs12_Reflectable", "Value"]
 - !private ["PSs12_Reflectable", "_Element"]
 - !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["PSs12_Reflectable", "append"]
@@ -1440,8 +1373,6 @@ depends-nominal:
 - !private "PSs10Comparable"
 - "PSs28CustomDebugStringConvertible"
 - "PSs23CustomStringConvertible"
-- !private "VSs10Dictionary"
-- !private "PSs28DictionaryLiteralConvertible"
 - !private "Sd"
 - "PSs9Equatable"
 - !private "C13myFitProgress23ExercisesViewController"
@@ -1557,4 +1488,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
-interface-hash: "cf943f8bc73576d90e96da626ca70f63"
+interface-hash: "fa1b1b042ed635cf803cda81ebe20456"
